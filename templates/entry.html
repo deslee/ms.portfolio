@@ -1,0 +1,16 @@
+{% extends "user.html" %}
+
+{% block content %}
+<div class="entry">
+    <h2>{{ entry.title }}</h2>
+    {{ entry.description }}
+    {{ entry.html|safe }}
+
+    <p>
+	    tags:
+	    {% for tag in entry.tags %}
+	    	<a href="{{url_for('tagged', tag=tag) }}">{{ tag }}</a>
+	    {% endfor %}
+	</p>
+</div>
+{% endblock content %}

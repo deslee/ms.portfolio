@@ -1,0 +1,8 @@
+{% extends "user.html" %}
+
+{% block content %}
+    <h2>Tagged: {{tag}}</h2>
+    {% with entries=entries  %}
+        {% include "base/_list.html" %}
+    {% endwith %}
+{% endblock content %}

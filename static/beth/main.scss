@@ -1,0 +1,209 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$primary-color: #FFAF55;
+$secondary-color: #4599Be;
+$secondary-color-dark: darken($secondary-color, 30);
+
+$header-font: 'Open Sans', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+$footer-height: 30px;
+$light-color: #F2F2F2;
+$grey-color: rgb(139, 139, 139);
+$dark-color: #333;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.site-header {
+	padding: 40px 0 20px;
+	background: url(http://25.media.tumblr.com/696a604321000e8e1d20a3c51bb1deb0/tumblr_mxnt90TjlL1s5mn7vo1_1280.jpg) center center repeat;
+	text-align: center;
+}
+
+.horizontal {
+	padding-bottom: 100px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+}
+
+.heading {
+	color: $light-color;
+	background: transparentize($secondary-color-dark, .6);
+	padding-bottom: 25px;
+	small.email {
+		font-size: .9em;
+		color: darken($light-color, 10);
+		margin-top: .2em;
+	}
+	small {
+		color: $light-color;
+		display: block;
+  		font-family: $body-font;
+  		font-size: 1em;
+	}
+	h1 {
+		a:link, a:visited, a:hover, a:active {
+			text-decoration: none;
+			color: $light-color;
+		}
+	}
+}
+
+nav.main-nav {
+	text-align: center;
+	background-color: transparentize($secondary-color-dark, .6);
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	.nav {
+		>li {
+			a:link, a:hover, a:visited, a:active {
+				color: $light-color;
+			}
+			a:hover {
+				background-color: transparentize($primary-color, .6);
+				border-radius: 10px;
+			}
+			display: inline-block;
+		}
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font;
+	font-weight: 0;
+}
+
+div.site {
+	min-height: 100%;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQYV2P89OnTfwYiAONQUjhx4kSG/Px8nN4aCp4BALDtKV2BruL4AAAAAElFTkSuQmCC);
+	margin-bottom: -$footer-height;
+
+	>.push {
+		min-height: $footer-height;
+	}
+}
+
+.main {
+	padding-bottom: 100px;
+
+	a:link, a:hover, a:visited, a:active {
+		color: $secondary-color;
+	}
+}
+
+$square-dim: 240px;
+$square-title: 30px;
+$square-link: 30px;
+
+ul.grid {
+	text-align: center;
+	margin-top: 20px;
+
+	> li {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		height: $square-dim;
+		overflow: hidden;
+		width: $square-dim;
+		border-radius: 5px;
+
+		img {
+			position: relative;
+			z-index: 2;
+			top: 0;
+			left: 0;
+			height: $square-dim;
+			width: $square-dim;
+		}
+
+		.category, .caption {
+			position: relative;
+			z-index: 3;
+			top: -$square-dim;
+			width: $square-dim;
+			height: $square-dim;
+		}
+
+		.category {
+			background-color: transparentize($secondary-color-dark, .50);
+			color: darken($light-color, 1);
+			padding: 5px 0;
+			text-align: center;
+			height: $square-title;
+		}
+
+		.caption {
+			color: darken($light-color, 1);
+
+			&.in {
+				background: transparentize($secondary-color-dark, .50);
+
+			}
+
+			.description {
+				display: none;
+				padding: 5px 10px 0;
+				text-align:left;
+				height: ($square-dim - $square-title);
+				font-size: .8em;
+				line-height: 2em;
+			}
+
+			a:link, a:hover, a:visited, a:active {
+				color: $light-color;
+				text-decoration: none
+			}
+		}
+	}
+}
+
+footer {
+	min-height: $footer-height;
+	background: $dark-color;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAAH0lEQVQIW2O0s7P7z4ADMA6k5JMnTxhkZGRQnEa+gwDGCRDR7zisuQAAAABJRU5ErkJggg==) repeat;
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.attribution {
+		padding: 5px 0 0;
+		color: $grey-color;
+		a:link, a:hover, a:visited, a:active {
+			color: $grey-color;
+		}
+	}
+}
+
+.extras {
+	color: $light-color;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQYV2O0sLD4z0AEYBx2Cm/dusWgpqaG1+8D6GsAPKITkYwWF1AAAAAASUVORK5CYII=) repeat;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul li {
+	margin-left: 1.4em;
+}
+
+.entry img {
+	max-width: 400px;
+	display: block;
+	margin: 1em auto;
+}

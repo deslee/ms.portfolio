@@ -1,0 +1,57 @@
+{% extends "base/base.html" %}
+
+{% block head %}
+<!-- Bootstrap -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bs/bootstrap.min.css') }}">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='beth/main.css') }}">
+
+{% endblock head %}
+
+{% block body %}
+	<div class="site">
+			<div class="site-header">
+					<div class="heading">
+						<div class="container">
+							<h1><a href="{{ url_for('index') }}">Elizabeth I. Del Rosario</a></h1>
+							<small>University student studying computer animations and arts in preparation for pursuing a career within the gaming or animation industry with focus upon conceptual art.</small>
+						</div>
+					</div>
+					<nav class="main-nav navbar navbar-default c">
+						<ul class="nav container">
+								<li><a href="{{url_for('tagged', tag='concept art')}}">Concept art</a></li>
+								<li><a href="{{url_for('tagged', tag='digital painting')}}">Digital paintings</a></li>
+								<li><a href="{{url_for('tagged', tag='3d art')}}">3D art</a></li>
+								<li><a href="{{ url_for("page", path='bio') }}">Bio / Contact</a></li>
+								<li><a href="{{ url_for("page", path='resume') }}">Resume</a></li>
+						</ul>
+					</nav>
+			</div>
+			
+			<div class="main" class="horizontal">
+				<div class="generated container">
+					{% block content %}
+					{% endblock %}
+				</div>
+			</div>
+
+			<div class="push"></div>
+	</div>
+
+	<footer>
+			<div class="attribution container">
+					<span class="pull-left">
+							Design by <a href="http://deslee.me">Desmond Lee</a>
+					</span>
+					<span class="pull-right">
+							<span class="glyphicon glyphicon-copyright-mark"></span> 2014 <a href="#">Elizabeth I. Del Rosario</a>
+					</span>
+			</div>
+	</footer>
+{% endblock body %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bs/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='beth/site.js') }}"></script>
+{% endblock scripts %}

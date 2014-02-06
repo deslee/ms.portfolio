@@ -1,0 +1,6 @@
+{% extends "user.html" %}
+
+{% block content %}
+    <h2>{{ entry.title }}</h2>
+    {{ entry.html|safe }}
+{% endblock content %}

@@ -1,0 +1,9 @@
+<ul class="art grid">
+{% for entry in entries %}
+    <li>
+        <img src="{{entry.thumbnail}}" alt="{{entry.title}}" /><div class="category">{{entry.title}}</div><div class="caption"><a href="{{ url_for("page", path=entry.path) }}"><div class="description">{{entry.description}}</div></a></div>
+    </li>
+{% else %}
+    <li>No entries.</li>
+{% endfor %}
+</ul>

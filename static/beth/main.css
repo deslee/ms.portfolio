@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+.site-header {
+  padding: 40px 0 20px;
+  background: url(http://25.media.tumblr.com/696a604321000e8e1d20a3c51bb1deb0/tumblr_mxnt90TjlL1s5mn7vo1_1280.jpg) center center repeat;
+  text-align: center; }
+
+.horizontal {
+  padding-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px; }
+
+.heading {
+  color: #f2f2f2;
+  background: rgba(27, 63, 79, 0.4);
+  padding-bottom: 25px; }
+  .heading small.email {
+    font-size: .9em;
+    color: #d8d8d8;
+    margin-top: .2em; }
+  .heading small {
+    color: #f2f2f2;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em; }
+  .heading h1 a:link, .heading h1 a:visited, .heading h1 a:hover, .heading h1 a:active {
+    text-decoration: none;
+    color: #f2f2f2; }
+
+nav.main-nav {
+  text-align: center;
+  background-color: rgba(27, 63, 79, 0.4);
+  padding: 0;
+  border: 0;
+  border-radius: 0; }
+  nav.main-nav .nav > li {
+    display: inline-block; }
+    nav.main-nav .nav > li a:link, nav.main-nav .nav > li a:hover, nav.main-nav .nav > li a:visited, nav.main-nav .nav > li a:active {
+      color: #f2f2f2; }
+    nav.main-nav .nav > li a:hover {
+      background-color: rgba(255, 175, 85, 0.4);
+      border-radius: 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 0; }
+
+div.site {
+  min-height: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQYV2P89OnTfwYiAONQUjhx4kSG/Px8nN4aCp4BALDtKV2BruL4AAAAAElFTkSuQmCC);
+  margin-bottom: -30px; }
+  div.site > .push {
+    min-height: 30px; }
+
+.main {
+  padding-bottom: 100px; }
+  .main a:link, .main a:hover, .main a:visited, .main a:active {
+    color: #4599be; }
+
+ul.grid {
+  text-align: center;
+  margin-top: 20px; }
+  ul.grid > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 240px;
+    overflow: hidden;
+    width: 240px;
+    border-radius: 5px; }
+    ul.grid > li img {
+      position: relative;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      height: 240px;
+      width: 240px; }
+    ul.grid > li .category, ul.grid > li .caption {
+      position: relative;
+      z-index: 3;
+      top: -240px;
+      width: 240px;
+      height: 240px; }
+    ul.grid > li .category {
+      background-color: rgba(27, 63, 79, 0.5);
+      color: #efefef;
+      padding: 5px 0;
+      text-align: center;
+      height: 30px; }
+    ul.grid > li .caption {
+      color: #efefef; }
+      ul.grid > li .caption.in {
+        background: rgba(27, 63, 79, 0.5); }
+      ul.grid > li .caption .description {
+        display: none;
+        padding: 5px 10px 0;
+        text-align: left;
+        height: 210px;
+        font-size: .8em;
+        line-height: 2em; }
+      ul.grid > li .caption a:link, ul.grid > li .caption a:hover, ul.grid > li .caption a:visited, ul.grid > li .caption a:active {
+        color: #f2f2f2;
+        text-decoration: none; }
+
+footer {
+  min-height: 30px;
+  background: #333333;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAAH0lEQVQIW2O0s7P7z4ADMA6k5JMnTxhkZGRQnEa+gwDGCRDR7zisuQAAAABJRU5ErkJggg==) repeat; }
+  footer .container {
+    padding-left: 0;
+    padding-right: 0; }
+  footer .attribution {
+    padding: 5px 0 0;
+    color: #8b8b8b; }
+    footer .attribution a:link, footer .attribution a:hover, footer .attribution a:visited, footer .attribution a:active {
+      color: #8b8b8b; }
+
+.extras {
+  color: #f2f2f2;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQYV2O0sLD4z0AEYBx2Cm/dusWgpqaG1+8D6GsAPKITkYwWF1AAAAAASUVORK5CYII=) repeat; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+ul li {
+  margin-left: 1.4em; }
+
+.entry img {
+  max-width: 400px;
+  display: block;
+  margin: 1em auto; }
