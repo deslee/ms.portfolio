@@ -1,5 +1,9 @@
 {% extends "base/base.html" %}
 
+{% block title %}
+Elizabeth I. Del Rosario
+{% endblock %}
+
 {% block head %}
 <!-- Bootstrap -->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bs/bootstrap.min.css') }}">
@@ -19,9 +23,9 @@
 					</div>
 					<nav class="main-nav navbar navbar-default c">
 						<ul class="nav container">
-								<li><a href="{{url_for('tagged', tag='concept art')}}">Concept art</a></li>
-								<li><a href="{{url_for('tagged', tag='digital painting')}}">Digital paintings</a></li>
-								<li><a href="{{url_for('tagged', tag='3d art')}}">3D art</a></li>
+								<li><a href="{{url_for('tagged', tag='concept-art')}}">Concept art</a></li>
+								<li><a href="{{url_for('tagged', tag='digital-painting')}}">Digital paintings</a></li>
+								<li><a href="{{url_for('tagged', tag='3d-art')}}">3D art</a></li>
 								<li><a href="{{ url_for("page", path='bio') }}">Bio / Contact</a></li>
 								<li><a href="{{ url_for("page", path='resume') }}">Resume</a></li>
 						</ul>

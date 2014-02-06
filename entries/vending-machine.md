@@ -1,5 +1,5 @@
 title: Vending Machine of Guilt
-tags: [concept art, color script]
+tags: [concept-art, color-script]
 description: Color scripts for the animated short, Vending Machine of Guilt.
 thumbnail: http://i.imgur.com/2slTPFk.jpg
 
